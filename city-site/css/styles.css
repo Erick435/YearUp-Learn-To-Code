@@ -3,6 +3,23 @@
     margin: 0;
 }
 
+nav {
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+main {
+    padding: 3rem
+}
+
+footer {
+    padding: 1rem;
+    background-color: lightgrey;
+}
+
+
+
+
 p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
