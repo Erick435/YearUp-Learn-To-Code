@@ -8,15 +8,21 @@ header {
     padding: 1rem;
 }
 
-main {
+main{
     margin: 1rem;
+}
+
+
+
+div{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
 }
 
 h1{
     padding-bottom: 1rem;
+    display:flex;
+    justify-content: center;
 }
 
-img{
-    padding-bottom: 2rem;
-    
-}
