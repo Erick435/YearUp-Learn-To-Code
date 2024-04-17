@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Nested Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/productStyle.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary"> <!-- Top Nav Bar -->
+
+            <!--  NAVBAR format from bs-5 snippet extension (copy and reuse for the other pages) -->
+            <!-- Logo from logoipsum.com -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Ipsum Logo SVG image clickable link to go back to home page -->
+                <svg width="" height="30" viewBox="0 0 169 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="container">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0148 2.5V40H0V2.5H10.0148Z" fill="#283841">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.0222 2.5H36.3037C43.2175 2.5 48.8222 8.09644 48.8222 15C48.8222 21.9036 43.2175 27.5 36.3037 27.5H25.037V40H15.0222V2.5ZM25.037 17.5H36.3037C37.6865 17.5 38.8074 16.3807 38.8074 15C38.8074 13.6193 37.6865 12.5 36.3037 12.5H25.037V17.5Z"
+                        fill="#283841"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M86.3778 2.5V21.875C86.3778 26.3623 90.0208 30 94.5148 30C99.0088 30 102.652 26.3623 102.652 21.875V2.5H112.667V21.875C112.667 31.8852 104.54 40 94.5148 40C84.4898 40 76.363 31.8852 76.363 21.875V2.5H86.3778Z"
+                        fill="#283841"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M52.5778 20C52.5778 10.335 60.4244 2.5 70.1037 2.5H72.6074V12.5H70.1037C65.9554 12.5 62.5926 15.8579 62.5926 20V21.25C62.5926 31.6053 54.1855 40 43.8148 40H42.563V30H43.8148C48.6545 30 52.5778 26.0825 52.5778 21.25V20Z"
+                        fill="#283841"></path>
+                    <path
+                        d="M169 3.75C169 5.82107 167.319 7.5 165.244 7.5C163.17 7.5 161.489 5.82107 161.489 3.75C161.489 1.67893 163.17 0 165.244 0C167.319 0 169 1.67893 169 3.75Z"
+                        fill="#283841"></path>
+                    <path
+                        d="M123.42 40L128.199 20.0181L131.752 32.0393C133.87 39.2091 144.041 39.2091 146.16 32.0393L149.712 20.0181L154.491 40H164.787L157.273 8.57949C155.486 1.10744 144.941 0.830781 142.763 8.19891L138.956 21.0833L135.148 8.19892C132.971 0.830824 122.425 1.1074 120.638 8.57948L113.124 40H123.42Z"
+                        fill="#283841"></path>
+                </svg>
+            </a>
+
+
+
+            <!-- Start of NavBar Links from Bootstrap snippet format -->
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-current="page">Home<span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Login/signup</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="registration.html">Sign Up</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">Checkout</a>
+                    </li>
+                </ul>
+                <form action="products.html" class="d-flex">
+                    <input class="form-control me-sm-0" type="text" placeholder="Search" required />
+
+                    <button class=" btn btn-dark  my-sm-0 " type="submit">
+                        <!--  Material design icons (Search icon, SVG type)-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="container">
+
+        <h1 class="text-center mt-3">Products</h1>
+
+
+        <section>
+
+            <h1 class="mt-5">Kitchen</h1>
+
+            <div class="border border-4 rounded" id="kitchenProducts">
+
+                <article>
+                    <div class="card" style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+                                voluptatum quis iure labore nisi ducimus, commodi excepturi voluptates maiores modi.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/product1.jpeg" alt="product1">
+                    </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+                </article>
+
+                <article>
+                    <div class="card" style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iure
+                                obcaecati, dolores quis aspernatur molestiae esse odit nam enim quas.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/product2.jpeg" alt="product2">
+                    </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="my-5">
+
+            <h1>Dining Room</h1>
+
+            <div class="border border-4 rounded" id="diningProducts">
+
+                <article>
+                    <div class="card " style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum
+                                omnis dolorem magnam quas. Illo dolorem quasi mollitia atque quibusdam.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/product3.jpeg" alt="product3">
+                    </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+
+                </article>
+
+
+                <article>
+                    <div class="card " style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolor
+                                voluptates voluptatum soluta porro velit delectus sequi beatae, reprehenderit mollitia.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/diningRoom2.jpeg" alt="product3">
+                    </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+
+                </article>
+            </div>
+        </section>
+
+        <section class="my-5">
+
+            <h1>Living Room</h1>
+
+            <div class="border border-4 rounded" id="livingRoom">
+
+                <article>
+                    <div class="card " style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id facere
+                                obcaecati perspiciatis quos ex doloribus voluptatem voluptate ut adipisci?</p>
+                            <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/product4.jpeg" alt="product4">
+                    </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+
+                </article>
+
+                <article>
+                    <div class="card " style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                                asperiores fuga aperiam voluptatibus cum! Nisi necessitatibus impedit architecto neque
+                                deleniti?</p>
+                            <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/livingRoom2.jpeg" alt="product4">
+                    </div>
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+
+                </article>
+            </div>
+        </section>
+
+        <section class="my-5">
+
+            <h1>Entertainment Room</h1>
+
+            <div class="border border-4 rounded" id="entertainmentRoom">
+
+                <article>
+                        <div class="card " style="width:18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident non
+                                    porro necessitatibus enim velit, in sapiente soluta molestias animi maiores.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 35 mins ago</small></p>
+                            </div>
+                            <img class="card-img-bottom" src="images/product5.jpeg" alt="product5">
+                        </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+                </article>
+
+
+                <article>
+                    <div class="card " style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe
+                                maiores beatae quaerat deserunt sit?</p>
+                            <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/product6.jpeg" alt="product6">
+                    </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+                </article>
+
+
+                <article>
+                    <div class="card " style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo iusto
+                                necessitatibus nostrum voluptas dignissimos saepe dolorem sint omnis natus?</p>
+                            <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                        </div>
+                        <img class="card-img-bottom" src="images/entertainment3.jpeg" alt="product6">
+                    </div>
+
+                    <a href="checkout.html" id="shopButton">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-dark pt-5 pb-4">
+        <div class="text-white container">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="text-white container pb-4">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="container text-center text-white" id="containerFooter">
+            <a href="#" class="">Careers</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

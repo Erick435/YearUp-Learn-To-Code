@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#kitchenProducts{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#diningProducts{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#livingRoom {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#entertainmentRoom{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#containerFooter{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+#shopButton{
+    display:flex;
+    justify-content:center;
+    margin: 1rem auto;
+}
+
+.card{
+    margin-top:1rem;
+}

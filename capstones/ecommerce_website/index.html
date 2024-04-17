@@ -17,17 +17,6 @@
 
 <body>
 
-    <nav
-        class="nav justify-content-center  "
-    >
-        <a class="nav-link active" href="#" aria-current="page"
-            >Active link</a
-        >
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link disabled" href="#">Disabled link</a>
-    </nav>
-    
-
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary"> <!-- Top Nav Bar -->
 
@@ -35,7 +24,7 @@
             <!-- Logo from logoipsum.com -->
             <a class="navbar-brand" href="index.html">
                 <!-- Ipsum Logo SVG image clickable link to go back to home page -->
-                <svg width="169" height="30" viewBox="0 0 169 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                <svg width="" height="30" viewBox="0 0 169 40" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="container">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0148 2.5V40H0V2.5H10.0148Z" fill="#283841">
                     </path>
@@ -57,7 +46,10 @@
                 </svg>
             </a>
 
+
+
             <!-- Start of NavBar Links from Bootstrap snippet format -->
+
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
@@ -65,7 +57,7 @@
                                 class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
@@ -75,9 +67,12 @@
                             <a class="dropdown-item" href="registration.html">Sign Up</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">Checkout</a>
+                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-0" type="text" placeholder="Search" />
+                <form action="products.html" class="d-flex">
+                    <input class="form-control me-sm-0" type="text" placeholder="Search" required />
 
                     <button class=" btn btn-dark  my-sm-0 " type="submit">
                         <!--  Material design icons (Search icon, SVG type)-->
@@ -94,77 +89,58 @@
 
 
 
-    <main class="container md-6">
+    <main class="container">
 
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="First slide"
-                ></li>
-                <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="1"
-                    aria-label="Second slide"
-                ></li>
-                <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="2"
-                    aria-label="Third slide"
-                ></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img
-                        src="https://placehold.co/200x250/png"
-                        class=" img-responsive"
-                        alt="First slide"
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="https://placehold.co/200x200/png"
-                        class=" img-responsive"
-                        alt="Second slide"
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="https://placehold.co/300x200/png"
-                        class=""
-                        alt="Third slide"
-                    />
-                </div>
-            </div>
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="next"
-            >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        
+
+        <section class="mt-5 text-center">
+            <h1>Nested Home</h1>
+            <img src="images/furniture1.jpeg" alt="furniture1" width="500px" height="500px">
+        </section>
+
+        <article>
+
+            <h1>Furniture Details:</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sed, praesentium reiciendis sequi deserunt
+                tenetur, explicabo fuga animi aut ipsa nihil molestiae hic eligendi, amet aspernatur sit architecto
+                magnam totam expedita! Qui dicta eos veritatis deleniti natus corporis. Iure accusantium sit fugit vel
+                saepe voluptatum expedita unde ipsam asperiores inventore?</p>
+
+                <ul>
+                    <li><b>Price : $899.00</b></li>
+                    <li><b>Category : Furniture</b></li>
+                    <li><b>Availability : In Stock</b></li>
+                    </ul>
+
+        </article>
+
+        <section>
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti alias quae maxime sit autem libero
+                consequuntur quod nesciunt provident explicabo, recusandae blanditiis enim accusantium rem natus numquam
+                reprehenderit aperiam in commodi voluptate vitae. Voluptatibus delectus optio nisi quam repellat. Cum
+                nemo nostrum exercitationem ipsa? Ad sed excepturi hic repellendus natus odio? Nulla harum aliquam iure
+                repudiandae eius similique, dolorum dolor recusandae accusantium atque, sunt animi, non ut ducimus eum
+                nihil. Numquam totam excepturi animi accusantium error repellendus fugit inventore laborum quod
+                sapiente, qui consequatur dolorum.</p>
+
+        </section>
 
     </main>
 
 
-    <footer>
-        <!-- place footer here -->
+    <footer class="bg-dark pt-5 pb-4">
+        <div class="text-white container">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="text-white container pb-4">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="container text-center text-white" id="containerFooter">
+            <a href="#" class="">Careers</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
     </footer>
 
 

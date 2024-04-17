@@ -2,3 +2,11 @@
     padding: 0;
     margin: 0;
 }
+
+
+
+
+#containerFooter{
+    display:flex;
+    justify-content:space-around;
+}
