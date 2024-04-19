@@ -43,3 +43,8 @@ main{
     background-color: rgb(153, 151, 151);
     
 }
+
+#containerFooter {
+    display: flex;
+    justify-content: space-around;
+}
