@@ -67,9 +67,9 @@
 
 ### Week 3
 
-1. **Day 1 (4/22)** review & information = Reviewed about what we learned. Took an assessment for what we learned already (HTML, CSS, bootstrap). Started to learn the basics and fundamentals of critical thinking and programming knowledge (being specific with directions) 
+1. **Day 1 (4/22)** review & information = Reviewed about what we learned. Took an assessment for what we learned already (HTML, CSS, bootstrap). Started to learn the basics and fundamentals of critical thinking and programming knowledge (being specific with directions).
 
-2. **Day 2 (4/23)** *Fundamentals of JavaScript* = Learning the basics/fundamentals of JavaScript such as variables, assignments,console logging. 
+2. **Day 2 (4/23)** *Fundamentals of JavaScript* = Learning the basics/fundamentals of JavaScript such as variables, assignments,console logging. Worked on exercises to help us understand how to use JavaScript and created multiple files/folders for Workbook 2.
     ```
         var box1 = "Hello"
         var box2 = 21;
