@@ -1,6 +1,6 @@
 # Year Up: Learning to Code Academy 
 
-**Week 1**
+## Week 1
 
 1. **Day 1 (4/8):** **setting up tools/technologies** = Installing VS Code, Git, Node.js
 
@@ -24,4 +24,14 @@
     </main>
     ```
 
-**Week 2**
+## Week 2
+
+1. **Day 1 (4/15):** *capstones/ecommerce_replica* = Started our capstone project where we will build an ecommerce using the fundamentals of HTML, CSS and Bootstrap. Presented and instructed a demo tutorial with serveral individuals on how to start and create a template to start on our project as well as helped with other styling and small related problems with bootstrap/CSS/HTML. 
+    - Got started with *index.html*, *products.html*, *register.html*, and *login.html*. As well as created multiple CSS files for the html files created. 
+    ### Images (Day 1)
+    - ![Index Page](../LearnToCodeAcademy/capstones/ecommerce_replica/Screenshots/ecommerce_replica_index.png)
+    - ![Product Page](../LearnToCodeAcademy/capstones/ecommerce_replica/Screenshots/ecommerce_replica_products.png)
+    - ![Register Page](../LearnToCodeAcademy/capstones/ecommerce_replica/Screenshots/ecommerce_replica_register.png)
+    - ![Login Page](../LearnToCodeAcademy/capstones/ecommerce_replica/Screenshots/ecommerce_replica_login.png)
+
+2. **Day 2 (4/16):** *capstones/ecommerce_replica* = 
