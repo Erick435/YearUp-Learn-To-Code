@@ -1,4 +1,4 @@
-// Exercise 3 part 2 
+// Exercise 3 part 2
 //  Federal taxes are 23%/month you make X. How much is withheld for taxes? 
 // Don't display partial pennies, use toFixed().
 
