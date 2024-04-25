@@ -1,7 +1,7 @@
-// Exercise 1 part 2 
-// Define variable that contians the current hour (0 - 23). Display the greetings below based on the current hour)
+// Exercise 1 part 2
+// Define variable that contains the current hour (0 - 23). Display the greetings below based on the current hour)
 
-var currentTime = 18; 
+var currentTime = 18;
 
 if (currentTime <= 10){
     console.log("Good morning!");
