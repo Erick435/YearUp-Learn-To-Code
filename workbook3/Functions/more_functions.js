@@ -14,7 +14,7 @@ function addNumbers(num1, num2) {
 
 
 function displayReceipt(totalDue, amountPaid){
-    console.log("\nTotal Due: $" + totalDue + "Amount Paid: $" + amountPaid + "\nChange Due: $" + (amountPaid - totalDue) + "\n");
+    console.log("\nTotal Due: $" + totalDue + " Amount Paid: $" + amountPaid + "\nChange Due: $" + (amountPaid - totalDue) + "\n");
 }
 
 let firstName = "Erik";
