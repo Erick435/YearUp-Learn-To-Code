@@ -4,24 +4,40 @@
 
 function parseAndDisplayName(nameOfPerson){
     let separationOfName = nameOfPerson.indexOf(" ");
-    let firstName = nameOfPerson.substring(0, separationOfName);
-    let lastName = nameOfPerson.substring(separationOfName + 1);
-    let middleName = nameOfPerson.substring(separationOfName + 2);
+    let separationOfName2 = nameOfPerson.indexOf(" ", separationOfName + 1);
+    
+    let firstName, lastName, middleName, answer;
+    
 
-    let answer = " ";
-
-    if (separationOfName == 1){
-        answer = "\n\nFirst Name: " + firstName;
-    }
-    else if (separationOfName == 2){
-        answer = "\n\nFirst Name: " + firstName + "\nMiddle Name: " + lastName + "\nLast Name: " + middleName;
+    if (separationOfName < 0){
+        firstName = nameOfPerson;
     }
     else {
-        answer = "\n\nFirst Name: " + firstName + "\nLast Name: " + lastName;
+        firstName = nameOfPerson.substring(0, separationOfName);
+        lastName = nameOfPerson.substring(separationOfName + 1);
     }
 
-    console.log(answer);
-    console.log(separationOfName);
+    if (separationOfName2 > 0){
+        lastName = nameOfPerson.substring(separationOfName + 1);
+        
+    }
+    else if (separationOfName2 > separationOfName){
+        middleName = nameOfPerson.substring(separationOfName + 1, separationOfName2)
+        lastName = nameOfPerson.substring(separationOfName2 + 1);
+    }
+
+    if (!middleName && !lastName){
+        answer = "First name: " + firstName;
+    }
+    else if (!middleName){
+        answer = "First name: " + firstName + "\nlast name: " + lastName;
+    }
+    else {
+        answer = "First name: " + firstName + "\nMiddle Name: " + middleName + "\nlast name: " + lastName;
+    }
+
+    console.log("\n\n" + answer);
+
 }
 
 let person1 = parseAndDisplayName("Cher");

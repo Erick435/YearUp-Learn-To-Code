@@ -1,17 +1,17 @@
 // Exercise 2
 "use strict";
 
-let d = new Date(2000, 10, 11);
+let d = new Date("05/23/1994");
 
-console.log(d.toLocaleDateString());
-
-
-let d1 = new Date(1998, 2, 25);
-
-console.log(d1.toLocaleDateString());
+console.log(d.toLocaleString());
 
 
-let d2 = new Date(1500, 3, 3);
+let d1 = new Date("Sep 22 1854");
 
-console.log(d2.toLocaleDateString());
+console.log(d1.toDateString());
+
+
+let d2 = new Date(1500, 3, 5);
+
+console.log(d2.toLocaleString());
 
