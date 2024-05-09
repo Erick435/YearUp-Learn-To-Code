@@ -1,5 +1,5 @@
 // Exercise 1
-// Add a courses array 
+// Add a courses array
 
 let courses = [
     {
@@ -45,14 +45,22 @@ function findClass200(courses, category) {
 
     let class200Time = [];
 
-    for (let i = 0; i < courses.length; i++) {
-        // console.log(courses[i].length);
-        if (courses[i].CourseId == category) {
-            class200Time = courses[i].StartDate;
-            // console.log(class200Time);
-        }
+    // for (let i = 0; i < courses.length; i++) {
+    //     // console.log(courses[i].length);
+    //     if (courses[i].CourseId == category) {
+    //         class200Time = courses[i].StartDate;
+    //         // console.log(class200Time);
+    //     }
         
+    // }
+
+    // using for of loops
+    for (let course of courses){
+        if (course.CourseId == category){
+            class200Time = course.StartDate;
+        }
     }
+
     console.log("Class " + category + " Starts at: " + class200Time);
 
 }
@@ -65,12 +73,20 @@ function titleOfCourse(courses, category) {
 
     let title = [];
 
-    for (let i = 0; i < courses.length; i++) {
-        if (courses[i].CourseId == category) {
-            title = courses[i].Title;
-        }
+    // for (let i = 0; i < courses.length; i++) {
+    //     if (courses[i].CourseId == category) {
+    //         title = courses[i].Title;
+    //     }
         
+    // }
+
+    // Using for of loops
+    for (let course of courses){
+        if (course.CourseId == category) {
+            title = course.Title
+        }
     }
+    
     console.log("\n" + category + " is called: " + title);
 }
 
@@ -86,13 +102,21 @@ function lessThan50(courses){
     console.log("Courses $50 or less are as follows: ");
     console.log('====================================');;
 
-    for (let i = 0; i < courses.length; i++){
+    // for (let i = 0; i < courses.length; i++){
 
-        if (courses[i].Fee <= 50){
-            courses50OrLess = courses[i];
+    //     if (courses[i].Fee <= 50){
+    //         courses50OrLess = courses[i];
+    //         console.log(courses50OrLess);
+    //     }
+        
+    // }
+
+    // Using For of loops
+    for (let course of courses){
+        if (course.Fee <= 50){
+            courses50OrLess = course;
             console.log(courses50OrLess);
         }
-        
     }
 
     console.log('====================================');
@@ -110,16 +134,25 @@ function classRoom(courses, location){
     
     let classRoom1 = [];
 
-    for (let i = 0; i < courses.length; i++){
+    // for (let i = 0; i < courses.length; i++){
         
+    //     if (courses[i].Location == location){
+    //         classRoom1 = courses[i];
+    //         console.log(classRoom1);
+    //     }
         
-        if (courses[i].Location == location){
-            classRoom1 = courses[i];
+    // }
+
+    // Using For of Loops
+    for (let course of courses){
+        if (course.Location == location){
+            classRoom1 = course;
             console.log(classRoom1);
         }
-        
     }
-    console.log('====================================');    
+
+    
+    console.log('====================================');
 }
 
 classRoom(courses, "Classroom 1")
