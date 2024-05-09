@@ -55,7 +55,21 @@ const states = [
 
 function init() {
 
-    console.log("Hello World!");
+    const statesList = document.getElementById("statesList");
+
+    for (const state of states){
+        
+        // create the <options> element 
+        const option = document.createElement("option");
+        
+        // make the value of the option element as the arrays abbrev
+        option.value = state.abbrev;
+        
+        // replace the empty text in the option element with the states name (array)
+        option.innerText = state.name;
+        // add the option element as a child element to the select element
+        statesList.appendChild(option);
+    }
 
 }
 
