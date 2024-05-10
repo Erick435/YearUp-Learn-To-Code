@@ -30,20 +30,22 @@ function footBallDropDown(){
 function selectTeam(){
     console.log("SelectTeam function has been called");
     let selectedTeam = footBallTeam.value;
+    let teamPlay = "";
+    
     
     if (footBallTeam.selectedIndex >= 0){
         let text = footBallTeam.options[footBallTeam.selectedIndex].text;
         let value = selectedTeam;
 
-        paragraph.innerText = "Team: " + text +  "\nCode: " + value;
+        for (let team of teams){
+            if(text == team.name){
+                teamPlay = team.plays;
+            }
+        }
+
+        paragraph.innerText = "You selected the " + text +  " (" + value + ") " + "who play in " + teamPlay;
     }
     
-}
-
-function showOrHide(){
-
-    
-
 }
 
 
