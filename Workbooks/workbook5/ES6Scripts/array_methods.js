@@ -1,3 +1,5 @@
+// Exercise 1 - Using .map .forEach() and arrow functions
+
 "use strict";
 
 let products = [
