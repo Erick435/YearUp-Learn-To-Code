@@ -35,6 +35,8 @@ let products = [
 // USING .MAP AND ARROW FUNCTIONS =============================
 
 let productNames = products.map(products => products.item);
-console.log(productNames);
+
+// USING .FOREACH() AND ARROW FUNCTIONS =============================
 
 
+productNames.forEach(productNames => console.log(productNames))
