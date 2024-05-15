@@ -1,0 +1,28 @@
+<!-- Exercise to create an image element using javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child</title>
+</head>
+<body>
+    
+
+    <div id="imageContainer"></div>
+
+    <script>
+        "use strict";
+
+        window.onload = function() {
+            const imageContainer = document.querySelector("#imageContainer");
+            let image = document.createElement("img");
+            image.src = "https://placehold.co/200";
+            image.alt = "placeholder";
+
+            imageContainer.appendChild(image);
+        }
+    </script>
+</body>
+</html>
