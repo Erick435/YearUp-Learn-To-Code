@@ -41,7 +41,7 @@ function loadWinningTicketsTable() {
         let cell3 = row.insertCell(2);
         cell3.innerText = wTicket.expires
 
-
+// comment
         
     }
 }
