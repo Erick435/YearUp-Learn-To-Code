@@ -116,6 +116,39 @@ let people = [
     },
 ];
 
+const tableBody = document.querySelector("#tableBody");
+
 window.onload = function () {
-    console.log("Hello world!");
+
+    displayData();
+
 }
+
+function displayData() {
+
+    console.log("displayData called");
+
+    
+    for (let p of people){
+        let row = tableBody.insertRow();
+        
+        let cell1 = row.insertCell(0);
+        cell1.innerText = p.id;
+        
+        let cell2 = row.insertCell(1);
+        cell2.innerText = p.firstName;
+        
+        let cell3 = row.insertCell(2);
+        cell3.innerText = p.lastName;
+        
+        let cell4 = row.insertCell(3);
+        cell4.innerText = p.email;
+        
+        let cell5 = row.insertCell(4);
+        cell5.innerText = p.ipAddress;
+
+        tableBody.appendChild(row);
+    }
+    
+}
+
