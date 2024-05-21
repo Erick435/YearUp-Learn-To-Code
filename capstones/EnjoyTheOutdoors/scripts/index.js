@@ -47,7 +47,7 @@ function displayStates() {
 
     let states = locationsArray;
     let showAll = new Option("All");
-    showAll.value = "showAll";
+    showAll.value = "All";
     
     dropdownSelect.appendChild(showAll);
 
@@ -66,7 +66,7 @@ function displayTypes() {
 
     let types = parkTypesArray;
     let showAll = new Option("All");
-    showAll.value = "showAll";
+    showAll.value = "All";
     
     dropdownSelect.appendChild(showAll);
     
@@ -91,7 +91,7 @@ function displaySelectedData() {
         filteredParks = parkLocations;
     }
     else if (locationInput.checked) {
-
+        
         filteredParks = parkLocations.filter(p => p.State == selectedValue);
         
     }
