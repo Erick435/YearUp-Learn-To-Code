@@ -79,7 +79,7 @@ function displayTypes() {
     filterTitle.innerText = "Park Types";
 }
 
-// ====================== FUNCTION TO GET FILTERED DATA BY LOCATION =======
+// ====================== FUNCTION TO GET SELECTED DATA FROM DROPDOWN =======
 
 function displaySelectedData() {
     let parkLocations = nationalParksArray;
