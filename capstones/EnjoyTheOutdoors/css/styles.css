@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #27AE60;
+}
+
+#highlight {
+    color: #308bc7;
+}
+
+#headerTitle {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+#aboutSection {
+    flex: 1;
+    margin-left: 70px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: cadetblue;
+}
+
+ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
