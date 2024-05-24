@@ -45,7 +45,7 @@ function displaySelectedMountain(){
     let mountainCard = mountains.find(mountain => mountain.elevation == selectedValue);
     
 
-    let mountainCardCreate = function (mountainArray) {
+    let mountainCardCreate = async function (mountainArray) {
 
         
         let cardContainer = document.createElement("div");
@@ -66,6 +66,7 @@ function displaySelectedMountain(){
         
         let cardBodyDiv = document.createElement("div");
         cardBodyDiv.classList.add("card-body")
+        
         cardContainer.appendChild(cardBodyDiv);
         
         let cardTitle = document.createElement("h4");
@@ -75,11 +76,26 @@ function displaySelectedMountain(){
         let cardParagraph = document.createElement("p");
         cardParagraph.innerText = mountainArray.desc;
         cardBodyDiv.appendChild(cardParagraph);
+
+        let bottomCardText = document.createElement("div");
+        bottomCardText.classList.add("container");
+        cardContainer.appendChild(bottomCardText);
         
-        let cardElevation = document.createElement("p");
+        let cardElevation = document.createElement("h5");
         cardElevation.innerText = `Elevation: ${mountainArray.elevation} ft`
-        cardElevation.classList.add("h5");
-        cardBodyDiv.appendChild(cardElevation);
+        bottomCardText.appendChild(cardElevation);
+
+        let apiCall = await getSunsetForMountain(mountainArray.lat, mountainArray.lng);
+        
+        let sunRise = document.createElement("h5");
+        sunRise.innerText = `Sunrise: ${apiCall.results.sunrise}`;
+        bottomCardText.appendChild(sunRise);
+
+        let sunSet = document.createElement("h5");
+        sunSet.innerText = `Sunset: ${apiCall.results.sunset}`;
+        bottomCardText.appendChild(sunSet);
+        
+        
 
     }
 
@@ -93,4 +109,13 @@ function displaySelectedMountain(){
         mountainCardCreate(mountainCard);
     }
         
+}
+
+
+// function that can "fetch" the sunrise/sunset times
+async function getSunsetForMountain(lat, lng){
+    let response = await fetch(
+    `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
+    let data = await response.json();
+    return data;
 }

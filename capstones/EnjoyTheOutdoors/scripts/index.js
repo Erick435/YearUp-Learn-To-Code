@@ -131,7 +131,12 @@ function displayParks(parks) {
         cell5.innerText = park.ZipCode;
         
         let cell6 = row.insertCell(5);
-        cell6.innerText = park.Phone;
+        if (park.Phone != 0){
+            cell6.innerText = park.Phone;
+        }
+        else {
+            cell6.innerText = "N/A"
+        }
 
         let cell7 = row.insertCell(6);
         if (park.Visit != undefined) {
