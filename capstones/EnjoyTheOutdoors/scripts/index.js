@@ -135,7 +135,11 @@ function displayParks(parks) {
 
         let cell7 = row.insertCell(6);
         if (park.Visit != undefined) {
-            cell7.innerText = park.Visit;
+            let websiteLink = document.createElement('a');
+            websiteLink.href = park.Visit;
+            websiteLink.textContent = "Visit Here";
+            websiteLink.target = "_blank";
+            cell7.appendChild(websiteLink);
         }
         else {
             cell7.innerText = "N/A";
