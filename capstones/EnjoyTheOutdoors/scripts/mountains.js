@@ -81,39 +81,8 @@ function displaySelectedMountain(){
         cardElevation.classList.add("h5");
         cardBodyDiv.appendChild(cardElevation);
 
-        
-        
-        // This is the code that works, take out everything else below ==============
-        
-
-        // let cardImg = document.createElement("img");
-        // cardImg.classList.add("card-img-top");
-        // cardImg.src = `./images/${mountainCard.img}`;
-        // cardImg.alt = mountainCard.name;
-        
-        // cardContainer.appendChild(cardImg);
-        
-        // let cardBodyDiv = document.createElement("div");
-        // cardBodyDiv.classList.add("card-body")
-        // cardContainer.appendChild(cardBodyDiv);
-        
-        // let cardTitle = document.createElement("h4");
-        // cardTitle.innerText = mountainCard.name;
-        // cardBodyDiv.appendChild(cardTitle);
-        
-        // let cardParagraph = document.createElement("p");
-        // cardParagraph.innerText = mountainCard.desc;
-        // cardBodyDiv.appendChild(cardParagraph);
-        
-        // let cardElevation = document.createElement("p");
-        // cardElevation.innerText = `Elevation: ${mountainCard.elevation} ft`
-        // cardElevation.classList.add("h5");
-        // cardBodyDiv.appendChild(cardElevation);
-
     }
 
-
-    
 
     if (selectedValue == "All"){
         for (let mountain of mountains){
@@ -125,5 +94,3 @@ function displaySelectedMountain(){
     }
         
 }
-
-// ============ DISPLAY CARD IMAGE AND INFORMATION ================
