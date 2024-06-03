@@ -1,0 +1,21 @@
+GET https://jsonplaceholder.typicode.com/albums
+
+# GET
+GET https://jsonplaceholder.typicode.com/albums/5
+
+### GET Albums
+GET https://outdoors-finder.netlify.app/
+
+### GET Albums
+GET https://jsonplaceholder.typicode.com/albums/5
+
+### Get cocktail Margarita
+GET www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+### Get Bloody mary cocktail
+GET www.thecocktaildb.com/api/json/v1/1/search.php?s=bloody_mary
+
+### Get list of Cat information
+Get https://cat-fact.herokuapp.com/facts
+
+### Get a single Cat Fact
+GET https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=2
