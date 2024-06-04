@@ -41,24 +41,14 @@
             </section>
 
             <div class="form-floating container d-flex flex-column">
-                <input type="number" class="form-control" name="idInput" id="idInput" placeholder="Input ID here">
+                <input type="number" class="form-control" name="idInput" id="idInput" placeholder="Input ID here" required>
                 <label for="idInput" class="mx-4">Enter TODO ID here:</label>
-                <button class="btn btn-primary my-4">Submit</button>
+                <button class="btn btn-primary my-4" id="submitButton">Submit</button>
             </div>
 
-            <div class="container" id="messageBox">
-                <h2>Message</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Complete?</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-
-                    </tbody>
-                </table>
+            <div class="container card" id="messageBox">
+                
+                
             </div>
 
         </main>
