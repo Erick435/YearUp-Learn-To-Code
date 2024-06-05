@@ -1,0 +1,42 @@
+"use strict";
+
+const cardContainer = document.querySelector("#cardContainer");
+const charactersDropDown = document.querySelector("#characterDropDown");
+
+window.onload = function() {
+
+displayCharactersDropDown();
+
+}
+
+function displayCharactersDropDown() {
+
+    console.log("displayCharactersDropDown() was called");
+    fetch("https://rickandmortyapi.com/api/character")
+        .then((response) => response.json())
+        .then((characters) => {
+            let allCharacters = characters.results;
+            for (let character of allCharacters) {
+
+                let option = new Option(character);
+                option.text = character.name;
+                option.value = character.id;
+
+                charactersDropDown.appendChild(option);
+            }
+            console.log(characters.results);
+        })
+
+    
+}
+
+function getCharacterInfo() {
+
+    
+
+    fetch("https://rickandmortyapi.com/api/character")
+        .then((response) => response.json())
+        .then((character) => function() {
+
+        })
+}

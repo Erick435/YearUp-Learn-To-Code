@@ -1,0 +1,5 @@
+# Show characters page 19 
+GET https://rickandmortyapi.com/api/character/?page=19
+
+### Show characters from page 2
+GET https://rickandmortyapi.com/api/character/?page=2
