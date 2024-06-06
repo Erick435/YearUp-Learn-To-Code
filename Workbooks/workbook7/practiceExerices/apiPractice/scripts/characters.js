@@ -7,6 +7,8 @@ window.onload = function() {
 
 displayCharactersDropDown();
 
+charactersDropDown.onchange = getCharacterInfo;
+
 }
 
 function displayCharactersDropDown() {
@@ -32,7 +34,7 @@ function displayCharactersDropDown() {
 
 function getCharacterInfo() {
 
-    
+    console.log("A character was selected");
 
     fetch("https://rickandmortyapi.com/api/character")
         .then((response) => response.json())
