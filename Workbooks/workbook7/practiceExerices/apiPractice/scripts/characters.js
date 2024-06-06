@@ -64,13 +64,34 @@ function getCharacterInfo() {
                         
                         // CREATE A DIV FOR THE BODY TEXT
                         let cardBodyDiv = document.createElement("div");
+                        cardBodyDiv.classList.add("container")
                         cardContainer.appendChild(cardBodyDiv);
 
                         // CREATE TITLE FOR THE BODY TEXT
-                        let cardTitle = document.createElement("h5");
+                        let cardTitle = document.createElement("h4");
                         cardTitle.classList.add("card-title");
+                        cardTitle.classList.add("my-4");
                         cardTitle.innerText = character.name;
                         cardBodyDiv.appendChild(cardTitle);
+
+                        // CREATE PARAGRAPHS AND DISPLAY INFORMATION ==================
+                        let characterSpecies = document.createElement("p");
+                        characterSpecies.innerText = "Species: " + character.species;
+                        cardBodyDiv.appendChild(characterSpecies);
+                        
+                        let characterGender = document.createElement("p");
+                        characterGender.innerText = "Gender: " + character.gender;
+                        cardBodyDiv.appendChild(characterGender);
+                        
+                        let characterType = document.createElement("p");
+                        if (character.type == ""){
+                            characterType.innerText = "Type: Not Available";
+                        }
+                        cardBodyDiv.appendChild(characterType);
+                        
+                        let characterStatus = document.createElement("p");
+                        characterStatus.innerText = "Status: " + character.status;
+                        cardBodyDiv.appendChild(characterStatus);
 
                     }
                 }
