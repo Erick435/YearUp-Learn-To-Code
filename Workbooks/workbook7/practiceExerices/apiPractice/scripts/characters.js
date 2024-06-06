@@ -60,10 +60,15 @@ function getCharacterInfo() {
                         // CREATE AN IMAGE FOR EACH CHARACTER CARD
                         let characterImage = document.createElement("img");
                         characterImage.src = character.image;
+                        characterImage.alt = character.name;
+                        characterImage.classList.add("m-2");
+                        characterImage.classList.add("rounded-2")
                         cardContainer.appendChild(characterImage);
+
                         
                         // CREATE A DIV FOR THE BODY TEXT
                         let cardBodyDiv = document.createElement("div");
+                        cardBodyDiv.appendChild(document.createElement("hr"));
                         cardBodyDiv.classList.add("container")
                         cardContainer.appendChild(cardBodyDiv);
 
