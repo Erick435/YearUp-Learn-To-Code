@@ -5,5 +5,4 @@ GET https://rickandmortyapi.com/api/character/?page=19
 GET https://rickandmortyapi.com/api/character/?page=2
 
 ### SHOW ALL CHARACTERS FROM PAGE 1
-
 GET https://rickandmortyapi.com/api/character
