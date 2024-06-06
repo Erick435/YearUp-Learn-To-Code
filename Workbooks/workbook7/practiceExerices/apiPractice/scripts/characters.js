@@ -1,4 +1,5 @@
 "use strict";
+// API DOC LINK: https://rickandmortyapi.com/documentation/#info-and-pagination
 
 const cardContainer = document.querySelector("#cardContainer");
 const charactersDropDown = document.querySelector("#characterDropDown");
