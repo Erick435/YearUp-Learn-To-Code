@@ -1,0 +1,32 @@
+# Get users from Api folder: placeholder-db.json and placeholder-server.js
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### ADDING/INSERTING A NEW USER
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id": 11,
+    "name": "Erik Ortega",
+    "username": "EOrtega123",
+    "email": "eortega123@gmail.com",
+    "address": {
+        "street": "Water Street",
+        "suite": "",
+        "city": "Queens",
+        "zipcode": "11234-1234",
+        "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+        }
+    },
+    "phone": "123-123-1234",
+    "website": "eOrtega123.com",
+    "company": {
+        "name": "Ortega Corp.",
+        "catchPhrase": "Lorem Ipsum",
+        "bs": "synergize scalable supply-chains"
+    }
+}
+

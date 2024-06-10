@@ -1,0 +1,30 @@
+# GETTING A TODO
+GET http://localhost:3000/todos/
+
+### GETTING TODO FOR ID 1
+GET http://localhost:3000/todos/1
+
+### POST A TODO FOR ID 1
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "title": "Create a post request using JSON",
+    "completed": true,
+    "id": 1
+}
+
+### PUT A TODO FOR ID 1
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "title": "Update Todo 1 request using JSON",
+    "completed": false,
+    
+}
+
+### DELETE TODO ID 1
+DELETE http://localhost:3000/todos/18
