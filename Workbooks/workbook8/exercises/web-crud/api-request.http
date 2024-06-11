@@ -1,0 +1,15 @@
+# Get ALL Users from API
+GET http://localhost:3000/users
+
+### CREATE A NEW USER
+Content-Type: application/json
+
+{
+    "name": "name",
+    "username": "user",
+    "email": "email"
+}
+
+
+### DELETE USERS
+DELETE http://localhost:3000/users/25

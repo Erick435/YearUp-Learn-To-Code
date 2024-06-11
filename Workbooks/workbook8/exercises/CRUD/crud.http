@@ -10,20 +10,17 @@ Content-Type: application/json
 
 {
     "userId": 1,
-    "title": "Create a post request using JSON",
-    "completed": true,
-    "id": 1
+    "title": "Create a post request using soemthingsdf",
+    "completed": true
 }
 
 ### PUT A TODO FOR ID 1
-PUT http://localhost:3000/todos/1
+PUT http://localhost:3000/todos/19
 Content-Type: application/json
 
 {
-    "userId": 1,
     "title": "Update Todo 1 request using JSON",
-    "completed": false,
-    
+    "completed": false
 }
 
 ### DELETE TODO ID 1
