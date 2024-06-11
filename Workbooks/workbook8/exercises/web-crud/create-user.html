@@ -67,7 +67,7 @@
                 </a>
                 <div class="collapse navbar-collapse container" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 ">
-                        <li class="nav-item btn btn-outline-primary">
+                        <li class="btn btn-outline-primary">
                             <a href="home.html" class="nav-link">Home</a>
                         </li>
                     </ul>
@@ -87,32 +87,34 @@
 
     <main class="container">
 
-        <div class="my-5 d-flex justify-content-between">
-            <h1>Users</h1>
-            <a href="create-user.html" class="align-content-center" id="createButton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" class="bi bi-plus-circle-fill" fill="#0d6efd" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
-                </svg>
-            </a>
-            
+        <div class="my-5">
+            <h1>Create A New User</h1>
         </div>
 
         <div>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Option</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <!-- ADD DATA USING JS FROM home.js FILE -->
-                </tbody>
-            </table>
-        </div>
+            <form action="home.html">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="fullName" id="fullName" placeholder="" required>
+                    <label for="fullName">Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" name="confirmEmail" id="confirmEmail" placeholder="" required>
+                    <label for="confirmEmail">Confirm Email</label>
+                </div>
 
+                <div class="my-3 d-grid">
+                    <button class="btn btn-outline-success btn-lg py-2" id="submitButton">Create New User</button>
+                </div>
+            </form>
+        </div>
 
     </main>
 
@@ -125,7 +127,7 @@
 
 
 
-    <script src="scripts/home.js"></script>
+    <script src="scripts/create-user.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
