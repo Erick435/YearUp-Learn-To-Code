@@ -22,7 +22,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-white" style="background-color: #e3f2fd;">
-            <div class="container" style="width:100%">
+            <div class="container">
                 <a class="navbar-brand" href="home.html">
                     <svg id="logo-47" width="155" height="29" class="gradient" viewBox="0 0 155 29" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@
     <main class="container">
 
         <div class="my-5">
-            <h1>Create A New User</h1>
+            <h1>Edit User</h1>
         </div>
 
         <div>
@@ -110,8 +110,9 @@
                     <label for="confirmEmail">Confirm Email</label>
                 </div>
 
-                <div class="my-3 d-grid">
-                    <button class="btn btn-outline-success btn-lg py-2" id="submitButton">Create New User</button>
+                <div class="my-4 d-flex justify-content-between">
+                    <button class="btn btn-outline-success btn-lg py-2" id="updateUser">Update User</button>
+                    <button class="btn btn-outline-danger btn-lg py-2" id="deleteUser">Delete User</button>
                 </div>
             </form>
         </div>
@@ -127,9 +128,7 @@
 
 
 
-    <script src="scripts/create-user.js"></script>
-
-    <script src="scripts/delete-user.js"></script>
+    <script src="scripts/update-delete.js"></script>
     
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

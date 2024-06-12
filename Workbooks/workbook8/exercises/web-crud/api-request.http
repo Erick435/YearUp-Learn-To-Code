@@ -2,12 +2,13 @@
 GET http://localhost:3000/users
 
 ### CREATE A NEW USER
+POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "name",
-    "username": "user",
-    "email": "email"
+    "name": "Jackie",
+    "username": "jchan12",
+    "email": "jackie123@gmail.com"
 }
 
 

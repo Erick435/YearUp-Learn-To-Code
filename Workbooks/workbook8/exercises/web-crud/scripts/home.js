@@ -31,11 +31,16 @@ function showAllUsers() {
                 cell2.innerText = user.email;
 
                 let cell3 = row.insertCell(3);
-                cell3.innerText = "option";
+
+                let editLink = document.createElement("a");
+                editLink.href = "update-delete.html";
+                editLink.classList.add("btn");
+                editLink.classList.add("btn-outline-primary");
+                editLink.innerText = "Edit";
+                editLink.id = user.id;
+                cell3.appendChild(editLink);
 
                 tableBody.appendChild(row);
             }
         })
-
-
 }
