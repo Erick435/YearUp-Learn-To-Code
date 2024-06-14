@@ -1,6 +1,6 @@
 "use strict";
 
-const 
+
 
 window.onload = function() {
 
@@ -8,6 +8,13 @@ window.onload = function() {
 
 }
 
+function updateUser() {
+
+    fetch("http://localhost:3000/users/")
+    
+}
+
 function deleteUser() {
 
 }
+
