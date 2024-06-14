@@ -1,5 +1,5 @@
 # Get ALL Users from API
-GET http://localhost:3000/users
+GET http://localhost:3000/users/2
 
 ### CREATE A NEW USER
 POST http://localhost:3000/users

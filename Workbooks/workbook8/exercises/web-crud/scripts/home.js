@@ -33,7 +33,7 @@ function showAllUsers() {
                 let cell3 = row.insertCell(3);
 
                 let editLink = document.createElement("a");
-                editLink.href = "update-delete.html";
+                editLink.href = `http://localhost:5500/Workbooks/workbook8/exercises/web-crud/update-delete.html?id=${user.id}`;
                 editLink.classList.add("btn");
                 editLink.classList.add("btn-outline-primary");
                 editLink.innerText = "Edit";
