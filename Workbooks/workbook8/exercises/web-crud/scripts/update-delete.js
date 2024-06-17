@@ -1,9 +1,13 @@
 "use strict";
 
 const urlParams = new URLSearchParams(location.search);
+
 const fullName = document.querySelector("#fullName");
 const userName = document.querySelector("#userName");
 const userEmail = document.querySelector("#userEmail");
+
+const updateUser = document.querySelector("#updateUser");
+const deleteUser = document.querySelector("#deleteUser");
 
 window.onload = function () {
 
@@ -34,7 +38,22 @@ function getUser() {
     }
 }
 
+function updateUser() {
+    console.log("updateUser called");
+    
+    let bodyData = {
+        name: fullName.value,
+        username: userName.value,
+        email: userEmail.value
+    }
+
+    fetch("http://localhost:3000/users/")
+    
+}
+
 function deleteUser() {
 
+    console.log("deleteUser called");
+    
 }
 

@@ -17,26 +17,51 @@
     </head>
 
     <body>
-        <header>
-            <!-- place navbar here -->
+        <header class="container">
+            <h1>Welcome</h1>
         </header>
+        
+        
+        <main class="container my-4">
+            
+            <button class="btn btn-outline-primary" id="submitButton">Submit</button>
 
+            <div id="displayContainer" class="my-4">
 
-
-        <main>
-
-            <h1>Home Page</h1>
-
-
+            </div>
         </main>
+        
 
 
+        <script>
+            "use strict";
 
-        <footer>
-            <!-- place footer here -->
-        </footer>
+            const submitButton = document.querySelector("#submitButton");
+            const displayContainer = document.querySelector("#displayContainer");
+            
+            window.onload = function() {
+
+                submitButton.onclick = getSessionStorage;
+
+            }
+
+            function getSessionStorage() {
+
+                let categoryViewed = "fruits";
+                
+                sessionStorage.category1 = categoryViewed;
+
+                let showText = document.createElement("h2");
+                categoryViewed = sessionStorage.category1;
+
+                showText.innerText = categoryViewed;
+
+                displayContainer.appendChild(showText);
+                
+            }
 
 
+        </script>
 
         <!-- Bootstrap JavaScript Libraries -->
         <script
